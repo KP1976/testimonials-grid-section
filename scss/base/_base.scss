@@ -5,20 +5,17 @@ body {
 }
 
 body {
-  // align-items: center;
-  // background-color: $very-light-gray;
-  // font-family: $font-name;
-  // @include flex-column();
-  // min-height: 100dvh;
-  // justify-content: flex-start;
-  // line-height: 1;
+  background-color: $light-grayish-blue;
+  font-family: $font-name;
+  min-height: 100dvh;
+  line-height: 1;
+  overflow: hidden;
 }
 
 main {
-  // align-items: center;
-  // @include flex-column($space-72);
-  // flex: 1 1 auto;
-  // justify-content: center;
-  // padding: 5.75rem $space-32 4.688rem;
-  // width: 100%;
+  align-items: center;
+  @include flex-column($space-24);
+  flex: 1 1 auto;
+  justify-content: center;
+  padding: $space-72 $space-24;
 }
