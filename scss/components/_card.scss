@@ -32,4 +32,17 @@
   &__person-info {
     @include flex-column($space-4);
   }
+
+  &__name {
+    color: $light-gray;
+    font-size: $font-size-13;
+    font-weight: 600;
+  }
+
+  &__graduate {
+    color: $light-gray-50;
+    font-size: $font-size-12;
+    font-weight: 500;
+    letter-spacing: $letter-spacing--0_4;
+  }
 }
