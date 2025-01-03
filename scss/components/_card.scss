@@ -1,0 +1,35 @@
+.card {
+  border-radius: $border-radius-8;
+  @include flex-column($space-16);
+  padding: $space-24 $space-32 $space-32;
+  position: relative;
+
+  &--1 {
+    background-color: $moderate-violet;
+    color: $white;
+
+    & .card__avatar {
+      border: 2px solid $light-gray-50;
+    }
+  }
+
+  &__quotemark {
+    position: absolute;
+    right: 1.5rem;
+    top: 0;
+  }
+
+  &__person {
+    align-items: center;
+    @include flex-row($space-14);
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    width: 2rem;
+  }
+
+  &__person-info {
+    @include flex-column($space-4);
+  }
+}

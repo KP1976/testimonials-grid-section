@@ -156,3 +156,45 @@ main {
   justify-content: center;
   padding: 4.5rem 1.5rem;
 }
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem 2rem 2rem;
+  position: relative;
+}
+.card--1 {
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 100%);
+}
+.card--1 .card__avatar {
+  border: 2px solid hsla(0, 0%, 81%, 0.5);
+}
+.card__quotemark {
+  position: absolute;
+  right: 1.5rem;
+  top: 0;
+}
+.card__person {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 0.875rem;
+}
+.card__avatar {
+  border-radius: 50%;
+  width: 2rem;
+}
+.card__person-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
