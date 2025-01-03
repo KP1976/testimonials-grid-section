@@ -178,6 +178,61 @@ main {
 .card--1 .card__avatar {
   border: 2px solid hsla(0, 0%, 81%, 0.5);
 }
+.card--1 .card__name {
+  color: hsl(0, 0%, 81%);
+}
+.card--1 .card__graduate {
+  color: hsla(0, 0%, 81%, 0.5);
+}
+.card--1 .card__description {
+  color: hsla(0, 0%, 81%, 0.7);
+}
+.card--2, .card--4 {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(210, 46%, 95%);
+}
+.card--2 .card__avatar, .card--4 .card__avatar {
+  border: 2px solid hsla(217, 19%, 35%, 0.5);
+}
+.card--2 .card__name, .card--4 .card__name {
+  color: hsl(210, 46%, 95%);
+}
+.card--2 .card__graduate, .card--4 .card__graduate {
+  color: hsla(210, 46%, 95%, 0.5);
+}
+.card--2 .card__description, .card--4 .card__description {
+  color: hsla(210, 46%, 95%, 0.7);
+  width: 100%;
+}
+.card--3, .card--5 {
+  background-color: hsl(0, 0%, 100%);
+}
+.card--3 .card__avatar, .card--5 .card__avatar {
+  border: 2px solid hsla(217, 19%, 35%, 0.5);
+}
+.card--3 .card__name, .card--5 .card__name {
+  color: hsl(219, 29%, 14%);
+}
+.card--3 .card__graduate, .card--5 .card__graduate {
+  color: hsla(219, 29%, 14%, 0.5);
+}
+.card--3 .card__description, .card--5 .card__description {
+  color: hsla(219, 29%, 14%, 0.7);
+  width: 99.5%;
+}
+.card--4 {
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(210, 46%, 95%);
+}
+.card--4 .card__avatar {
+  border: 2px solid hsla(263, 55%, 52%, 0.5);
+}
+.card--4 .card__description {
+  width: 98%;
+}
+.card--3 .card__title, .card--5 .card__title {
+  color: hsl(219, 29%, 14%);
+}
 .card__quotemark {
   position: absolute;
   right: 1.5rem;
@@ -199,13 +254,30 @@ main {
   gap: 0.25rem;
 }
 .card__name {
-  color: hsl(0, 0%, 81%);
   font-size: 0.813rem;
   font-weight: 600;
 }
 .card__graduate {
-  color: hsla(0, 0%, 81%, 0.5);
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: -0.4px;
+}
+.card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1;
+}
+.card__title {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  width: 99.5%;
+}
+.card__description {
+  font-size: 0.813rem;
+  font-weight: 500;
+  line-height: 1.4;
+  width: 94%;
 }

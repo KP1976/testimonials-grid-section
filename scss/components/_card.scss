@@ -11,6 +11,83 @@
     & .card__avatar {
       border: 2px solid $light-gray-50;
     }
+
+    & .card__name {
+      color: $light-gray;
+    }
+
+    & .card__graduate {
+      color: $light-gray-50;
+    }
+
+    & .card__description {
+      color: $light-gray-70;
+    }
+  }
+
+  &--2,
+  &--4 {
+    background-color: $very-dark-grayish-blue;
+    color: $light-grayish-blue;
+
+    & .card__avatar {
+      border: 2px solid $very-dark-grayish-blue-50;
+    }
+
+    & .card__name {
+      color: $light-grayish-blue;
+    }
+
+    & .card__graduate {
+      color: $light-grayish-blue-50;
+    }
+
+    & .card__description {
+      color: $light-grayish-blue-70;
+      width: 100%;
+    }
+  }
+
+  &--3,
+  &--5 {
+    background-color: $white;
+
+    & .card__avatar {
+      border: 2px solid $very-dark-grayish-blue-50;
+    }
+
+    & .card__name {
+      color: $very-dark-blackish-blue;
+    }
+
+    & .card__graduate {
+      color: $very-dark-blackish-blue-50;
+    }
+
+    & .card__description {
+      color: $very-dark-blackish-blue-70;
+      width: 99.5%;
+    }
+  }
+
+  &--4 {
+    background-color: $very-dark-blackish-blue;
+    color: $light-grayish-blue;
+
+    & .card__avatar {
+      border: 2px solid $moderate-violet-50;
+    }
+
+    & .card__description {
+      width: 98%;
+    }
+  }
+
+  &--3,
+  &--5 {
+    & .card__title {
+      color: $very-dark-blackish-blue;
+    }
   }
 
   &__quotemark {
@@ -34,15 +111,33 @@
   }
 
   &__name {
-    color: $light-gray;
     font-size: $font-size-13;
     font-weight: 600;
   }
 
   &__graduate {
-    color: $light-gray-50;
     font-size: $font-size-12;
     font-weight: 500;
     letter-spacing: $letter-spacing--0_4;
+  }
+
+  &__text {
+    @include flex-column($space-16);
+    z-index: 1;
+  }
+
+  &__title {
+    color: $white;
+    font-size: $font-size-20;
+    font-weight: 600;
+    line-height: $line-height-120;
+    width: 99.5%;
+  }
+
+  &__description {
+    font-size: $font-size-13;
+    font-weight: 500;
+    line-height: $line-height-140;
+    width: 94%;
   }
 }
