@@ -5,7 +5,9 @@ body {
 }
 
 body {
+  align-items: center;
   background-color: $light-grayish-blue;
+  @include flex-column();
   font-family: $font-name;
   min-height: 100dvh;
   line-height: 1;
@@ -17,5 +19,7 @@ main {
   @include flex-column($space-24);
   flex: 1 1 auto;
   justify-content: center;
+  max-width: 72.5rem;
+  min-height: 100%;
   padding: $space-72 $space-24;
 }

@@ -25,6 +25,14 @@
     }
   }
 
+  &--1,
+  &--4,
+  &--5 {
+    @include respond-to($breakpoint-tablet) {
+      grid-column: 1 / -1;
+    }
+  }
+
   &--2,
   &--4 {
     background-color: $very-dark-grayish-blue;
