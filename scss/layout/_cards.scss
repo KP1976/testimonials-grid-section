@@ -9,6 +9,13 @@
 
   @include respond-to($breakpoint-tablet-big) {
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  @include respond-to($breakpoint-desktop) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: $space-24 $space-30;
   }
 }
 
