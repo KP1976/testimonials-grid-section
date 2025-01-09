@@ -306,6 +306,11 @@ main {
   right: 1.5rem;
   top: 0;
 }
+@media (min-width: 56.25rem) {
+  .card__quotemark {
+    right: 4.25rem;
+  }
+}
 .card__person {
   align-items: center;
   display: flex;
