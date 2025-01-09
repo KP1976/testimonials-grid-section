@@ -22,4 +22,8 @@ main {
   max-width: 72.5rem;
   min-height: 100%;
   padding: $space-72 $space-24;
+
+  @include respond-to($breakpoint-tablet-big) {
+    padding: $space-24;
+  }
 }

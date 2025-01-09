@@ -162,6 +162,11 @@ main {
   min-height: 100%;
   padding: 4.5rem 1.5rem;
 }
+@media (min-width: 56.25rem) {
+  main {
+    padding: 1.5rem;
+  }
+}
 
 .cards {
   display: flex;
@@ -173,6 +178,11 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, auto);
+  }
+}
+@media (min-width: 56.25rem) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -201,8 +211,13 @@ main {
   color: hsla(0, 0%, 81%, 0.7);
 }
 @media (min-width: 43.75rem) {
-  .card--1, .card--4, .card--5 {
+  .card--1 {
     grid-column: 1/-1;
+  }
+}
+@media (min-width: 56.25rem) {
+  .card--1 {
+    grid-column: 1/3;
   }
 }
 .card--2, .card--4 {
@@ -248,8 +263,23 @@ main {
 .card--4 .card__description {
   width: 98%;
 }
+@media (min-width: 43.75rem) {
+  .card--4 {
+    grid-column: 1/-1;
+  }
+}
+@media (min-width: 56.25rem) {
+  .card--4 {
+    grid-column: 2/4;
+  }
+}
 .card--3 .card__title, .card--5 .card__title {
   color: hsl(219, 29%, 14%);
+}
+@media (min-width: 43.75rem) {
+  .card--5 {
+    grid-column: 1/-1;
+  }
 }
 .card__quotemark {
   position: absolute;
